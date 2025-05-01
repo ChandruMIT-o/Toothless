@@ -1,0 +1,103 @@
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.brand-logo {
+	height: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.brand-text {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.brand-info {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	gap: 10px;
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	flex: 1;
+	padding: 1rem;
+}
+
+.info-box-flex2 {
+	flex: 2;
+}
+
+.info-title {
+	font-size: 1rem;
+	font-family: "Hanken Grotesk";
+	font-weight: 700;
+}
+
+.info-content {
+	font-size: 1rem;
+	font-family: "Hanken Grotesk";
+	font-weight: 500;
+}
+
+.brand-description {
+	font-family: "Hanken Grotesk";
+}
+
+.important-details {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 2rem;
+
+	align-items: center;
+}
+
+.details-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	flex: 3;
+}
+
+.details-list-flex2 {
+	flex: 5;
+}
+
+.details-list-item {
+	font-weight: 700;
+	font-family: "Hanken Grotesk";
+}
+
+.details-list-item-span {
+	font-weight: 300;
+}
+
+.copywrite-text {
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.vertical-line {
+	height: 150px;
+	width: 2px;
+	background-color: #969696;
+}
+
+.horizontal-line {
+	height: 2px;
+	background-color: #969696;
+	margin: 0px 2rem;
+}
+
+.title {
+	font-size: 9.3vw;
+	align-self: center;
+}

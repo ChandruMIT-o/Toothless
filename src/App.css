@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	scroll-padding-top: 100px; /* adjust if you have a fixed navbar */
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.bodylike {
+	box-sizing: border-box;
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+/* OPTIONAL: Fine control over the scroll easing */
+:root {
+	--scroll-ease: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+html {
+	scroll-behavior: smooth;
+	transition-timing-function: var(--scroll-ease);
+}

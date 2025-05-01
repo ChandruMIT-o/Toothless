@@ -1,0 +1,32 @@
+.button3 {
+	align-items: center;
+	color: black;
+	cursor: pointer;
+	display: flex;
+
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.5;
+	text-decoration: none;
+	text-transform: uppercase;
+	outline: 0;
+	border: 0;
+	padding: 1rem;
+
+	background-color: transparent;
+}
+
+.button3:before {
+	background-color: black;
+	content: "";
+	display: inline-block;
+	height: 3px;
+	margin-right: 10px;
+	transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+	width: 0;
+}
+
+.button3:hover:before {
+	background-color: black;
+	width: 3rem;
+}

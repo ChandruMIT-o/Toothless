@@ -1,0 +1,90 @@
+.service-section {
+	height: 100vh;
+	padding: 1rem;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.service-section-hero-text {
+	font-size: 4rem;
+	font-weight: 500;
+	letter-spacing: -0.2rem;
+}
+
+.service-section-sub-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	flex: 1;
+}
+
+.service-main-boxes {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.7rem;
+	flex: 1;
+}
+
+.service-section-sub-boxes {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 0.7rem;
+}
+
+.service-main-box {
+	flex: 1;
+	background-color: #f6f6f6;
+	border-radius: 30px;
+	padding: 2.5rem 2rem;
+
+	font-size: 2rem;
+	font-weight: 500;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	cursor: pointer;
+}
+
+.service-box {
+	background-color: #f6f6f6;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 1.8rem;
+	color: #969696;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.main-box-img {
+	height: 250px;
+	object-fit: contain;
+}
+
+.main-box-title {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.main-box-details {
+	font-size: 1rem;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.main-box-arrow,
+.service-box-arrow {
+	transition: transform 0.2s ease;
+	display: inline-block;
+	margin-left: 8px;
+}

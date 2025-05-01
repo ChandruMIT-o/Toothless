@@ -1,0 +1,152 @@
+:root {
+	--scroll-ease: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Base nav wrapper */
+.nav-section {
+	position: fixed;
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	z-index: 100;
+	transition: background-color 0.5s var(--scroll-ease);
+}
+
+/* BRAND (logo + text) */
+.brand-bg {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	background: rgba(246, 246, 246, 0.9);
+	backdrop-filter: blur(20px);
+	padding: 0.5rem 1rem;
+	border-radius: 100px;
+
+	/* start in-place, then morph out */
+	transition: transform 0.6s var(--scroll-ease),
+		opacity 0.4s var(--scroll-ease);
+}
+.brand-bg.in {
+	transform: translateX(0);
+	opacity: 1;
+}
+.brand-bg.out {
+	transform: translateX(-150%);
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* NAV BUTTONS container */
+.nav-btnd {
+	display: flex;
+	gap: 0.5rem;
+	font-size: 0.9rem;
+	flex: 1;
+	justify-content: center;
+	transition: all 1s var(--scroll-ease);
+}
+
+/* Positioning tweaks for home vs other */
+.home-nav .nav-btnd {
+	position: static;
+	bottom: auto;
+	left: auto;
+	transform: none;
+}
+
+.footer-nav .nav-btnd {
+	position: static;
+	bottom: auto;
+	left: auto;
+	transform: none;
+}
+
+.other-nav .nav-btnd {
+	position: fixed;
+	bottom: 2rem;
+	width: 100%;
+	gap: 0.1rem;
+
+	font-weight: 500;
+}
+
+/* INDIVIDUAL NAV BUTTON */
+.nav-btn {
+	cursor: pointer;
+	border-radius: 100px;
+	padding: 0.5rem 1rem;
+	width: fit-content;
+	border: 1px solid #969696;
+	background: rgba(246, 246, 246, 0.9);
+	backdrop-filter: blur(20px);
+	transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.nav-btn:hover {
+	background-color: #00cf8e;
+	border-color: #00cf8e;
+	color: #fff;
+}
+
+/* INLINE Book button in other sections */
+.book-inline {
+	background: #000;
+	color: #fff;
+	border: none;
+}
+
+/* STANDALONE Book-Online (home only) */
+.book-online-btn {
+	background-color: #000;
+	color: #fff;
+	padding: 0.8rem 1.5rem;
+	border-radius: 100px;
+	font-size: 0.8rem;
+	cursor: pointer;
+	transition: opacity 0.4s var(--scroll-ease);
+}
+
+/* Logo sizing */
+.brand-logo-nav {
+	height: 25px;
+	border-radius: 50%;
+}
+.brand-text-nav {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+/* Auth buttons */
+.user-name {
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 0.7rem 1rem;
+	border-radius: 100px;
+	background: #e8e8e8;
+	color: #000;
+
+	cursor: pointer;
+}
+
+.user-name:hover {
+	background: #000;
+	color: #fff;
+}
+
+.auth-buttons {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.login-btn,
+.logout-btn {
+	background-color: #000;
+	color: #fff;
+	padding: 0.7rem 1rem;
+	border-radius: 100px;
+	font-size: 0.8rem;
+	cursor: pointer;
+	margin-right: 0.5rem;
+}
